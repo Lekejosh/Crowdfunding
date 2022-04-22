@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Nunito:wght@900&display=swap");
 :root {
   --moderateCyan: hsl(176, 50%, 47%);
   --darkCyan: hsl(176, 72%, 28%);
@@ -15,16 +15,33 @@
   --font-bold: 700;
 }
 
-.wrapper, .modal, .modal .form, .modal .form__pledge .pledge-radio, .modal .form__pledge--modal, .modal .form__pledge .modal__content, .modal .form__pledge .modal__content--number, .modal__success, .modal__success--text, .top__text, .middle .text, .about__rewards, .btn {
+.wrapper,
+.modal,
+.modal .form,
+.modal .form__pledge .pledge-radio,
+.modal .form__pledge--modal,
+.modal .form__pledge .modal__content,
+.modal .form__pledge .modal__content--number,
+.modal__success,
+.modal__success--text,
+.top__text,
+.middle .text,
+.about__rewards,
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header .nav, .modal__headings {
+.header .nav,
+.modal__headings {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.name-font {
+  font-family: "Nunito", sans-serif;
 }
 
 .btn {
@@ -38,13 +55,18 @@
   position: relative;
   transition: 0.3s;
 }
-.btn:focus, .btn:focus-visible {
-  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.15rem #fff, 0 0 1px 0.3rem var(--moderateCyan);
-  box-shadow: inset 0 -0.25rem 0 #0000001a, 0 0 3px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
+.btn:focus,
+.btn:focus-visible {
+  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.15rem #fff, 0 0 1px 0.3rem var(--moderateCyan);
+  box-shadow: inset 0 -0.25rem 0 #0000001a, 0 0 3px 0.25rem var(--white),
+    0 0 1px 0.3rem var(--moderateCyan);
 }
 .btn:active {
-  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.15rem va(--white), 0 0 1px 0.3rem var(--moderateCyan);
-  box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
+  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.15rem va(--white), 0 0 1px 0.3rem var(--moderateCyan);
+  box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
 }
 .btn:active {
   outline: 0.125rem dashed var(--moderateCyan);
@@ -57,7 +79,8 @@
   border-radius: 6.25rem;
   padding: 1.0625rem 1.875rem;
 }
-.btn--menu, .btn--close {
+.btn--menu,
+.btn--close {
   background-color: transparent;
   z-index: 1500;
 }
@@ -133,17 +156,23 @@
   fill: var(--darkCyan);
   transition: 0.3s ease-in-out;
 }
-.btn--continue, .btn--select, .btn--sucess {
+.btn--continue,
+.btn--select,
+.btn--sucess {
   background-color: var(--moderateCyan);
   padding: 1.0625rem 1.875rem;
   border-radius: 3.125rem;
 }
 @media (max-width: 280px) {
-  .btn--continue, .btn--select, .btn--sucess {
+  .btn--continue,
+  .btn--select,
+  .btn--sucess {
     padding: 1.0625rem 1.5rem;
   }
 }
-.btn--continue:hover, .btn--select:hover, .btn--sucess:hover {
+.btn--continue:hover,
+.btn--select:hover,
+.btn--sucess:hover {
   background-color: var(--darkCyan);
   transform: scale(0.96);
 }
@@ -194,7 +223,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -218,19 +247,24 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-a:focus, a:focus-visible,
+a:focus,
+a:focus-visible,
 a:visited:focus,
 a:visited:focus-visible,
 a:active:focus,
 a:active:focus-visible {
-  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.15rem #fff, 0 0 1px 0.3rem var(--moderateCyan);
-  box-shadow: inset 0 -0.25rem 0 #0000001a, 0 0 3px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
+  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.15rem #fff, 0 0 1px 0.3rem var(--moderateCyan);
+  box-shadow: inset 0 -0.25rem 0 #0000001a, 0 0 3px 0.25rem var(--white),
+    0 0 1px 0.3rem var(--moderateCyan);
 }
 a:active,
 a:visited:active,
 a:active:active {
-  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.15rem va(--white), 0 0 1px 0.3rem var(--moderateCyan);
-  box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1), 0 0 1px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
+  -webkit-box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.15rem va(--white), 0 0 1px 0.3rem var(--moderateCyan);
+  box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1),
+    0 0 1px 0.25rem var(--white), 0 0 1px 0.3rem var(--moderateCyan);
 }
 
 main {
@@ -254,7 +288,10 @@ p {
   margin: 0;
 }
 
-.heading, .heading--l, .heading--xl, .heading--xxl {
+.heading,
+.heading--l,
+.heading--xl,
+.heading--xxl {
   color: var(--black);
   line-height: 1.4;
 }
@@ -271,7 +308,10 @@ p {
   font-size: clamp(1.125rem, 4vw, 1.25rem);
 }
 
-.paragraph, .paragraph--sm, .paragraph--m, .paragraph--top {
+.paragraph,
+.paragraph--sm,
+.paragraph--m,
+.paragraph--top {
   color: var(--darkGray);
   line-height: 1.7;
 }
@@ -449,7 +489,8 @@ p {
   .header .nav__link:hover {
     color: var(--white);
   }
-  .header .nav__link:hover::after, .header .nav__link:hover::before {
+  .header .nav__link:hover::after,
+  .header .nav__link:hover::before {
     width: 100%;
     opacity: 1;
     visibility: visible;
@@ -589,7 +630,9 @@ p {
   flex-direction: column;
   gap: 1.25rem;
 }
-.about__rewards--bamboo, .about__rewards--black, .about__rewards--mohogany {
+.about__rewards--bamboo,
+.about__rewards--black,
+.about__rewards--mohogany {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -601,19 +644,25 @@ p {
   gap: 1.25rem;
 }
 @media (min-width: 40em) {
-  .about__rewards--bamboo .about__text, .about__rewards--black .about__text, .about__rewards--mohogany .about__text {
+  .about__rewards--bamboo .about__text,
+  .about__rewards--black .about__text,
+  .about__rewards--mohogany .about__text {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 }
-.about__rewards--bamboo .select, .about__rewards--black .select, .about__rewards--mohogany .select {
+.about__rewards--bamboo .select,
+.about__rewards--black .select,
+.about__rewards--mohogany .select {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 @media (min-width: 40em) {
-  .about__rewards--bamboo .select, .about__rewards--black .select, .about__rewards--mohogany .select {
+  .about__rewards--bamboo .select,
+  .about__rewards--black .select,
+  .about__rewards--mohogany .select {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -785,11 +834,11 @@ footer {
   outline: none;
 }
 
-input[type=radio]:checked ~ .pledge-radio::after {
+input[type="radio"]:checked ~ .pledge-radio::after {
   background: var(--moderateCyan);
 }
 
-input[type=radio]:checked ~ .modal__dropdown {
+input[type="radio"]:checked ~ .modal__dropdown {
   opacity: 1;
   visibility: visible;
   max-height: 9rem;
